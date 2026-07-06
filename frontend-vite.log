@@ -1,0 +1,17 @@
+
+> frontend@0.0.0 dev
+> vite --host 127.0.0.1
+
+[2m2:36:06 p. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+
+  [32m[1mVITE[22m v8.0.12[39m  [2mready in [0m[1m648[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5173[22m/[39m
+[2m3:05:28 p. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/DonationHistory.jsx[22m
+[2m3:05:29 p. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/DonationHistory.jsx[22m
+[2m3:10:41 p. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/SolicitudRegistro.jsx, /src/pages/admin/AdminCampaigns.jsx, /src/pages/auth/Registro.jsx, /src/pages/Home.jsx, /src/pages/admin/AdminDashboard.jsx, /src/pages/admin/AdminCompanyPanel.jsx, /src/pages/admin/AdminProfile.jsx, /src/pages/admin/AdminDonations.jsx, /src/pages/company/CompanyDashboard.jsx, /src/pages/admin/AdminAICampaignGenerator.jsx, /src/pages/admin/AdminCashIncome.jsx, /src/pages/admin/AdminUsers.jsx, /src/pages/company/CompanyAICampaignGenerator.jsx and 13 more[22m
+[2m3:11:55 p. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminCampaigns.jsx[22m
+[2m3:12:55 p. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminCampaigns.jsx[22m
+[2m3:16:07 p. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminCampaigns.jsx[22m
+[2m3:16:07 p. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminCampaigns.jsx[22m
+[2m3:16:29 p. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminCampaigns.jsx[22m
