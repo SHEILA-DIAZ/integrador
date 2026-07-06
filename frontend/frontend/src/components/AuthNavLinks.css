@@ -1,0 +1,29 @@
+.auth-nav-logout {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.auth-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.auth-nav-icon {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.auth-company-access {
+  gap: 8px;
+}

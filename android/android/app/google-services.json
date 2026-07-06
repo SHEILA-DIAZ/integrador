@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "615580984099",
+    "project_id": "firesupport-ia",
+    "storage_bucket": "firesupport-ia.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615580984099:android:2a4adb93538a071a01a296",
+        "android_client_info": {
+          "package_name": "com.firesupportia.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615580984099-03kau7h3fcklrpuq4l3287lbac6jvn5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFMy9bIsMGAu2AZ23zrr-UZqbf2n9ECnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615580984099-03kau7h3fcklrpuq4l3287lbac6jvn5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,194 @@
+.b3d-shell {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: radial-gradient(circle at 50% 18%, #ffffff 0%, #f8fafc 48%, #eef2f7 100%);
+}
+
+.b3d-shell canvas {
+  min-height: 320px;
+}
+
+.b3d-percent {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  min-height: 32px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--rojo);
+  font-size: 14px;
+  font-weight: 900;
+  box-shadow: 0 8px 18px rgba(220, 38, 38, 0.18);
+}
+
+.b3d-fallback {
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  color: #64748b;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.b3d-fallback-visual {
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 52%, rgba(220, 38, 38, 0.10), transparent 30%),
+    radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.06), transparent 56%);
+}
+
+.b3d-firefighter {
+  position: relative;
+  width: 128px;
+  height: 224px;
+}
+
+.b3d-helmet,
+.b3d-head,
+.b3d-body,
+.b3d-arm,
+.b3d-hand,
+.b3d-leg,
+.b3d-boot {
+  position: absolute;
+  display: block;
+}
+
+.b3d-helmet {
+  top: 2px;
+  left: 34px;
+  width: 60px;
+  height: 34px;
+  border-radius: 38px 38px 12px 12px;
+  background: #cbd5e1;
+}
+
+.b3d-helmet::after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  bottom: 5px;
+  height: 8px;
+  border-radius: 999px;
+  background: inherit;
+}
+
+.b3d-helmet.active {
+  background: #dc2626;
+}
+
+.b3d-head {
+  top: 32px;
+  left: 43px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #d6a46f;
+}
+
+.b3d-body {
+  top: 74px;
+  left: 37px;
+  width: 54px;
+  height: 78px;
+  border-radius: 12px;
+  background: #94a3b8;
+}
+
+.b3d-body.active,
+.b3d-arm.active,
+.b3d-leg.active {
+  background: #dc2626;
+}
+
+.b3d-body i {
+  position: absolute;
+  top: 17px;
+  left: 13px;
+  width: 28px;
+  height: 13px;
+  border-radius: 3px;
+  background: #facc15;
+}
+
+.b3d-arm {
+  top: 80px;
+  width: 24px;
+  height: 60px;
+  border-radius: 12px;
+  background: #94a3b8;
+}
+
+.b3d-arm.left {
+  left: 10px;
+}
+
+.b3d-arm.right {
+  right: 10px;
+}
+
+.b3d-hand {
+  top: 133px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #64748b;
+}
+
+.b3d-hand.left {
+  left: 8px;
+}
+
+.b3d-hand.right {
+  right: 8px;
+}
+
+.b3d-hand.active,
+.b3d-boot.active {
+  background: #111827;
+}
+
+.b3d-leg {
+  top: 148px;
+  width: 25px;
+  height: 66px;
+  border-radius: 7px;
+  background: #94a3b8;
+}
+
+.b3d-leg.left {
+  left: 37px;
+}
+
+.b3d-leg.right {
+  right: 37px;
+}
+
+.b3d-boot {
+  bottom: 0;
+  width: 30px;
+  height: 14px;
+  border-radius: 4px;
+  background: #64748b;
+}
+
+.b3d-boot.left {
+  left: 34px;
+}
+
+.b3d-boot.right {
+  right: 34px;
+}

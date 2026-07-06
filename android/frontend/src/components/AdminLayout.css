@@ -1,0 +1,252 @@
+.al-admin {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  background: #f5f5f5;
+  color: #0f172a;
+}
+
+.al-sidebar {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #111827;
+  color: var(--blanco);
+}
+
+.al-brand {
+  min-height: 112px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 18px;
+}
+
+.al-brand-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--rojo);
+  color: var(--blanco);
+  font-size: 20px;
+}
+
+.al-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 28px 16px;
+}
+
+.al-nav-item {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 16px;
+  border-radius: 8px;
+  color: #cbd5e1;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.al-nav-item span {
+  width: 18px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 19px;
+}
+
+.al-nav-item.active {
+  background: var(--rojo);
+  color: var(--blanco);
+}
+
+.al-nav-item.active span {
+  color: var(--blanco);
+}
+
+.al-nav-item.muted:hover {
+  color: var(--blanco);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.al-nav-item.static {
+  cursor: default;
+}
+
+.al-nav-item.static:hover {
+  color: #cbd5e1;
+  background: transparent;
+}
+
+.al-user {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.al-user > div {
+  min-width: 0;
+  flex: 1;
+}
+
+.al-avatar,
+.al-admin-avatar {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--blanco);
+  background: var(--rojo);
+  font-weight: 800;
+}
+
+.al-user strong,
+.al-user small {
+  display: block;
+}
+
+.al-user small {
+  margin-top: 3px;
+  color: #cbd5e1;
+  font-size: 12px;
+}
+
+.al-logout {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 34px;
+  border: 0;
+  border-radius: 8px;
+  color: #cbd5e1;
+  background: transparent;
+  font-size: 22px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.al-logout:hover {
+  color: var(--blanco);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.al-content {
+  min-width: 0;
+}
+
+.al-topbar {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: var(--blanco);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.al-top-actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #475569;
+}
+
+.al-account-trigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.al-bell {
+  position: relative;
+  font-size: 22px;
+}
+
+.al-bell::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--rojo);
+}
+
+.al-chevron {
+  color: #64748b;
+  font-weight: 800;
+}
+
+.al-account-menu {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  z-index: 30;
+  width: 228px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: var(--blanco);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.16);
+}
+
+.al-account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+}
+
+.al-account-info strong { color: #0f172a; }
+.al-account-info small { color: #64748b; }
+.al-account-info span { margin-top: 6px; color: #475569; font-size: 12px; font-weight: 700; }
+.al-menu-divider { border-top: 1px solid #e5e7eb; }
+.al-account-menu button { width: 100%; border: 0; padding: 11px 16px; color: #334155; background: var(--blanco); text-align: left; cursor: pointer; }
+.al-account-menu button:hover { background: #f8fafc; }
+.al-account-menu .al-menu-logout { color: var(--rojo); font-weight: 700; }
+
+.al-main {
+  padding: 36px 32px;
+}
+
+@media (max-width: 980px) {
+  .al-admin {
+    grid-template-columns: 1fr;
+  }
+
+  .al-sidebar {
+    min-height: auto;
+  }
+
+  .al-nav,
+  .al-user {
+    display: none;
+  }
+
+  .al-brand {
+    min-height: 68px;
+  }
+}
+
+@media (max-width: 700px) {
+  .al-main,
+  .al-topbar {
+    padding-inline: 18px;
+  }
+}

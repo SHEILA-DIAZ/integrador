@@ -1,0 +1,353 @@
+.hm-page {
+  min-height: 100vh;
+  background: #f4f4f5;
+  color: #111827;
+}
+
+.hm-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 clamp(18px, 10vw, 300px);
+  background: var(--blanco);
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+.hm-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #1f2937;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.hm-brand:hover {
+  color: #1f2937;
+}
+
+.hm-brand-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: var(--blanco);
+  background: var(--rojo);
+  font-size: 20px;
+}
+
+.hm-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.hm-links a {
+  color: #1f2937;
+}
+
+.hm-links a:hover {
+  color: var(--rojo);
+}
+
+.hm-links .hm-login {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 18px;
+  border-radius: 7px;
+  color: var(--blanco);
+  background: var(--rojo);
+}
+
+.hm-links .hm-login:hover {
+  color: var(--blanco);
+  background: var(--rojo-dark);
+}
+
+.hm-hero {
+  min-height: 440px;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(rgba(17, 24, 39, 0.78), rgba(17, 24, 39, 0.78)),
+    url('https://cloudfront-us-east-1.images.arcpublishing.com/infobae/JZPBMNAFRFCHTFRNQU5PWF47SQ.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--blanco);
+  text-align: center;
+}
+
+.hm-hero-content {
+  width: min(100%, 920px);
+  padding: 72px 18px;
+}
+
+.hm-hero h1 {
+  font-family: var(--font-cuerpo);
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hm-hero h1 span {
+  color: var(--rojo);
+}
+
+.hm-hero p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: #f8fafc;
+  font-size: clamp(18px, 2.4vw, 23px);
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.hm-hero-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.hm-primary,
+.hm-secondary,
+.hm-company-button {
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  padding: 0 28px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.hm-primary {
+  color: var(--blanco);
+  background: var(--rojo);
+}
+
+.hm-primary:hover {
+  color: var(--blanco);
+  background: var(--rojo-dark);
+}
+
+.hm-secondary {
+  color: #111827;
+  background: var(--blanco);
+}
+
+.hm-secondary:hover {
+  color: var(--rojo);
+}
+
+.hm-benefits {
+  background: var(--blanco);
+  padding: 64px 18px 76px;
+}
+
+.hm-section-head {
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.hm-section-head h2 {
+  color: #111827;
+  font-family: var(--font-cuerpo);
+  font-size: clamp(28px, 3vw, 34px);
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.hm-section-head p {
+  max-width: 560px;
+  margin: 0 auto;
+  color: #334155;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.hm-benefit-grid {
+  width: min(100%, 1030px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin: 0 auto;
+}
+
+.hm-benefit-card {
+  min-height: 210px;
+  padding: 28px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: var(--blanco);
+  box-shadow: 0 2px 5px rgba(15, 23, 42, 0.08);
+}
+
+.hm-card-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  color: var(--blanco);
+  background: var(--rojo);
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.hm-benefit-card h3 {
+  color: #0f172a;
+  font-family: var(--font-cuerpo);
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hm-benefit-card p {
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.hm-company {
+  background: linear-gradient(90deg, #df262b 0%, #b4000b 100%);
+  color: var(--blanco);
+}
+
+.hm-company-inner {
+  width: min(100%, 1030px);
+  min-height: 456px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 72px;
+  margin: 0 auto;
+  padding: 64px 18px;
+}
+
+.hm-company h2 {
+  max-width: 460px;
+  color: var(--blanco);
+  font-family: var(--font-cuerpo);
+  font-size: clamp(30px, 3.5vw, 38px);
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.hm-company p {
+  max-width: 550px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.hm-company-button {
+  color: var(--rojo);
+  background: var(--blanco);
+}
+
+.hm-company-button:hover {
+  color: var(--rojo-dark);
+}
+
+.hm-static-action {
+  cursor: default;
+}
+
+.hm-company img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+}
+
+.hm-metrics {
+  padding: 66px 18px;
+  background: #f4f4f5;
+}
+
+.hm-metric-grid {
+  width: min(100%, 1030px);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 26px;
+  margin: 0 auto;
+}
+
+.hm-metric-card {
+  min-height: 116px;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: var(--blanco);
+  box-shadow: 0 2px 5px rgba(15, 23, 42, 0.08);
+  text-align: center;
+}
+
+.hm-metric-card strong {
+  color: var(--rojo);
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.hm-metric-card span {
+  color: #334155;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .hm-nav {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 12px 18px;
+  }
+
+  .hm-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .hm-benefit-grid,
+  .hm-company-inner,
+  .hm-metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hm-company-inner {
+    gap: 34px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hm-hero {
+    min-height: 520px;
+  }
+
+  .hm-primary,
+  .hm-secondary,
+  .hm-company-button {
+    width: 100%;
+  }
+}

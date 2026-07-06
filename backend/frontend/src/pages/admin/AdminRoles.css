@@ -1,0 +1,248 @@
+.rp-heading {
+  margin-bottom: 30px;
+}
+
+.rp-heading h1 {
+  color: #0f172a;
+  font-family: var(--font-cuerpo);
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.rp-heading p {
+  color: #334155;
+  font-size: 16px;
+}
+
+.rp-error {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  color: #b91c1c;
+  background: #fef2f2;
+  font-weight: 700;
+}
+
+.rp-panel {
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: var(--blanco);
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+}
+
+.rp-table-wrap {
+  overflow-x: auto;
+}
+
+.rp-table {
+  width: 100%;
+  min-width: 920px;
+  border-collapse: collapse;
+}
+
+.rp-table th,
+.rp-table td {
+  padding: 17px 24px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.rp-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.rp-table th {
+  color: #475569;
+  background: #f8fafc;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.rp-role,
+.rp-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.rp-role.super_admin { color: #6b21a8; background: #f3e8ff; }
+.rp-role.admin_compania { color: #b91c1c; background: #fee2e2; }
+.rp-role.admin_asociacion { color: #1d4ed8; background: #dbeafe; }
+.rp-role.donante { color: #047857; background: #d1fae5; }
+.rp-role.bombero { color: #c2410c; background: #ffedd5; }
+.rp-status.activo { color: #047857; background: #d1fae5; }
+.rp-status.inactivo { color: #334155; background: #f1f5f9; }
+
+.rp-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rp-actions button {
+  border: 0;
+  color: #2563eb;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.rp-actions .rp-deactivate {
+  color: #dc2626;
+}
+
+.rp-state {
+  padding: 46px 18px;
+  color: #64748b;
+  text-align: center;
+}
+
+.rp-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.48);
+}
+
+.rp-modal {
+  position: relative;
+  width: min(100%, 440px);
+  border-radius: 12px;
+  padding: 26px;
+  background: var(--blanco);
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.28);
+}
+
+.rp-modal h2 {
+  color: #0f172a;
+  font-family: var(--font-cuerpo);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.rp-modal p {
+  margin-top: 16px;
+  color: #334155;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.rp-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  border: 0;
+  color: #0f172a;
+  background: transparent;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.rp-edit label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.rp-edit select {
+  min-height: 44px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  padding: 0 14px;
+  color: #0f172a;
+  background: var(--blanco);
+  font-size: 16px;
+}
+
+.rp-modal-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.rp-modal-actions button {
+  min-height: 46px;
+  border: 0;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.rp-modal-actions button:disabled {
+  cursor: wait;
+  opacity: 0.68;
+}
+
+.rp-primary {
+  color: var(--blanco);
+  background: var(--rojo);
+}
+
+.rp-secondary {
+  color: #0f172a;
+  background: #e5e7eb;
+}
+
+.rp-toast {
+  position: fixed;
+  right: 30px;
+  bottom: 28px;
+  z-index: 70;
+  min-width: 290px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border: 1px solid #a7f3d0;
+  border-radius: 7px;
+  color: #047857;
+  background: #ecfdf5;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.rp-toast span {
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--blanco);
+  background: #16a34a;
+  font-size: 12px;
+}
+
+@media (max-width: 620px) {
+  .rp-modal-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .rp-toast {
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+    min-width: 0;
+  }
+}
