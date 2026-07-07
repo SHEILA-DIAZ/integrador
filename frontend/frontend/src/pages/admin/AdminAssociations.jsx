@@ -66,6 +66,12 @@ export default function AdminAssociations() {
     setLoading(false)
   }
 
+  const cerrarModal = () => {
+    setModalVincular(false)
+    setForm(estadoInicial)
+    setErrores({})
+  }
+
   useEffect(() => {
     cargarAsociaciones()
   }, [])
@@ -80,12 +86,6 @@ export default function AdminAssociations() {
     document.addEventListener('keydown', cerrarConEsc)
     return () => document.removeEventListener('keydown', cerrarConEsc)
   }, [])
-
-  const cerrarModal = () => {
-    setModalVincular(false)
-    setForm(estadoInicial)
-    setErrores({})
-  }
 
   const handleChange = (event) => {
     const { name, value } = event.target

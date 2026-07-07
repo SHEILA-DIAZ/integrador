@@ -221,7 +221,10 @@ export default function AdminCompanyPanel() {
   }, [])
 
   const resumen = reporte.resumen || {}
-  const campanasDestacadas = Array.isArray(reporte.campanas_destacadas) ? reporte.campanas_destacadas : []
+  const campanasDestacadas = useMemo(
+    () => (Array.isArray(reporte.campanas_destacadas) ? reporte.campanas_destacadas : []),
+    [reporte.campanas_destacadas]
+  )
   const totalRecaudado = numero(resumen.monto_total_donado)
   const campanasActivas = numero(resumen.campanas_activas)
   const totalDonaciones = numero(resumen.total_donaciones)

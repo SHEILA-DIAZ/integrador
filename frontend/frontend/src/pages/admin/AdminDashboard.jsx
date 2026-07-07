@@ -192,7 +192,10 @@ export default function AdminDashboard() {
 
   const resumen = reporte.resumen || {}
   const solicitudes = reporte.solicitudes || {}
-  const campanasDestacadas = Array.isArray(reporte.campanas_destacadas) ? reporte.campanas_destacadas : []
+  const campanasDestacadas = useMemo(
+    () => (Array.isArray(reporte.campanas_destacadas) ? reporte.campanas_destacadas : []),
+    [reporte.campanas_destacadas]
+  )
   const cantidadPendientes = solicitudesPendientes.length || Number(solicitudes.pendientes || 0)
 
   const kpis = [
@@ -260,12 +263,6 @@ export default function AdminDashboard() {
     } finally {
       setProcesandoId(null)
     }
-  }
-
-  const abrirRechazo = (solicitud) => {
-    setSolicitudRechazar(solicitud)
-    setMotivoRechazo('')
-    setErrorRechazo('')
   }
 
   const confirmarRechazo = async (event) => {

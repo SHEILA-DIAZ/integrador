@@ -222,7 +222,7 @@ export default function AdminReports({ companyMode = false }) {
     }
   }, [cargarReportes])
 
-  const resumenBase = data.resumen || {}
+  const resumenBase = useMemo(() => data.resumen || {}, [data.resumen])
   const rankingBase = useMemo(() => {
     const campanas = Array.isArray(data.campanas_destacadas) ? data.campanas_destacadas : []
     return campanas.slice(0, 5).map((campana, index) => {

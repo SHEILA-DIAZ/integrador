@@ -117,7 +117,6 @@ export default function AdminCampaigns() {
   const [campanaEliminar, setCampanaEliminar] = useState(null)
   const [guardando, setGuardando] = useState(false)
   const [mensaje, setMensaje] = useState('')
-  const [toast, setToast] = useState('')
   const [recarga, setRecarga] = useState(0)
 
   useEffect(() => {
@@ -129,7 +128,7 @@ export default function AdminCampaigns() {
         const response = await obtenerCampanas()
         const lista = normalizarLista(response.data).map(normalizarCampana)
         if (!cancelado) setCampanas(lista)
-      } catch (err) {
+      } catch {
         if (!cancelado) {
           try {
             const response = await obtenerCampanasPublicas()
@@ -274,7 +273,6 @@ export default function AdminCampaigns() {
   return (
     <AdminLayout active="campaigns">
       <main className="ac-admin">
-      {toast && <div className="ac-toast" role="status">{toast}</div>}
       <aside className="ac-sidebar">
         <div className="ac-brand">
           <span className="ac-brand-icon">♨</span>

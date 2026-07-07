@@ -1,11 +1,10 @@
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import AssociationLayout from '../../components/AssociationLayout'
 import { BarChart, LineChart } from './AssociationCharts'
 import {
   campanasAsociacion,
   companiasAsociacion,
-  donacionesAsociacion,
   formatearSoles,
   porcentajeCampana,
   recaudacionMensual,
@@ -18,7 +17,7 @@ export default function AssociationDashboard() {
   const totalRecaudado = companiasAsociacion.reduce((acc, item) => acc + item.recaudado, 0)
   const donacionesProcesadas = 2847
   const fecha = new Date().toLocaleDateString('es-PE')
-  const mejores = useMemo(() => [...campanasAsociacion].sort((a, b) => b.recaudado - a.recaudado).slice(0, 4), [])
+  const mejores = [...campanasAsociacion].sort((a, b) => b.recaudado - a.recaudado).slice(0, 4)
 
   const acciones = [
     ['▤', 'Ver Companias', '/association/companies'],

@@ -192,12 +192,19 @@ export default function AdminUsers() {
       const response = await obtenerUsuariosCompania()
       const lista = obtenerColecciones(response.data).map(normalizarUsuario)
       setUsuarios(lista)
-    } catch (err) {
+    } catch {
       setUsuarios([])
       setMensaje('')
     } finally {
       if (!silencioso) setLoading(false)
     }
+  }
+
+  const cerrarModal = () => {
+    setModalAbierto(false)
+    setUsuarioEditando(null)
+    setForm(estadoInicial)
+    setErrores({})
   }
 
   useEffect(() => {
@@ -242,13 +249,6 @@ export default function AdminUsers() {
     })
     setErrores({})
     setModalAbierto(true)
-  }
-
-  const cerrarModal = () => {
-    setModalAbierto(false)
-    setUsuarioEditando(null)
-    setForm(estadoInicial)
-    setErrores({})
   }
 
   const handleChange = (event) => {

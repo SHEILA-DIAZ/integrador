@@ -144,7 +144,7 @@ export default function AdminDonations() {
         const response = await obtenerDonacionesVirtuales()
         const lista = normalizarLista(response.data).map(normalizarDonacion)
         if (!cancelado) setDonaciones(lista)
-      } catch (err) {
+      } catch {
         if (!cancelado) {
           try {
             const response = await obtenerDonacionesVirtualesPublicas()

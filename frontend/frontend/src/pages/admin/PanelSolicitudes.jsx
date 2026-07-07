@@ -50,7 +50,7 @@ export default function PanelSolicitudes({ active = 'solicitudes' }) {
       try {
         const response = await obtenerSolicitudes()
         if (!cancelado) setSolicitudes(normalizarLista(response.data))
-      } catch (err) {
+      } catch {
         if (!cancelado) {
           setSolicitudes([])
           setMensaje('')
@@ -88,13 +88,6 @@ export default function PanelSolicitudes({ active = 'solicitudes' }) {
     } finally {
       setProcesandoId(null)
     }
-  }
-
-  const abrirRechazo = (solicitud) => {
-    setMensaje('')
-    setSolicitudRechazar(solicitud)
-    setMotivoRechazo('')
-    setErrorMotivo('')
   }
 
   const cerrarRechazo = () => {
